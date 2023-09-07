@@ -1,0 +1,84 @@
+span,
+div,
+input,
+textarea,
+button,
+select,
+a,
+pre {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: 'Quicksand', sans-serif !important;
+}
+/*
+body{
+    display: flex;
+    flex-direction: column;
+}
+*/
+.btmcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*
+    height: 90vh;
+    */
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    max-width: 1000px;
+    font-family: Tahoma;
+}
+btmNav{
+    width: 95%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+btmNav .item {
+    width: 20%;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: white;
+}
+
+btmNav .item-svg {
+    width: 30px;
+    stroke: tomato;
+}
+
+btmNav .item-svg-active {
+    stroke: white;
+    display: flex;
+    z-index: 2;
+}
+
+btmNav .item-text {
+    font-size: 12px;
+    color: tomato;
+    margin-top: 3px;
+}
+
+btmNav .item-text-active {
+    display: none;
+}
+
+btmNav .swimmer {
+    min-width: 20%;
+    max-width: 100%;
+    height: 60px;
+    position: absolute;
+    transition: all 0.3s;
+    z-index: 1;
+    background: tomato;
+}
